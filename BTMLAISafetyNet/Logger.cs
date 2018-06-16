@@ -7,7 +7,7 @@ namespace BTMLAISafetyNet
     {
         public static void LogError(Exception ex)
         {
-            var filePath = $"{BTMLAISafetyNet.ModDirectory}/BTMLSoundOnFocusLost.log";
+            var filePath = $"{BTMLAISafetyNet.ModDirectory}/BTMLAISafetyNet.log";
             using (var writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine($"Message: {ex.Message}");
@@ -18,7 +18,7 @@ namespace BTMLAISafetyNet
 
         public static void LogLine(String line)
         {
-            var filePath = $"{BTMLAISafetyNet.ModDirectory}/BTMLSoundOnFocusLost.log";
+            var filePath = $"{BTMLAISafetyNet.ModDirectory}/BTMLAISafetyNet.log";
             using (var writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine(line);
